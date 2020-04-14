@@ -15,7 +15,7 @@ function App() {
                 {/* <Route path="/help" render={() => <h1>Hello i am help route</h1>} />*/}
                 {/*<Route path="/" exact component={Home}/>*/}
                 <Switch>
-                    <Route path="/" exact component={Home}/>
+                    <Route path="/" exact render={ () => <Home name="maruf" />}/>
                     <Route path="/about" component={About}/>
                     <Route path="/contact" component={Contact}/>
                 </Switch>

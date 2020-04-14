@@ -4,7 +4,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <h1>this is home page</h1>
+                <h1>this is home page | mr. {this.props.name}</h1>
             </div>
         );
     }
