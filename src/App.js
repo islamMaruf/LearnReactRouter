@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Nav from "./components/Nav";
 function App() {
     return (
         <BrowserRouter>
@@ -14,6 +15,7 @@ function App() {
                 {/*<Route path="/about" render={() => <h1>Hello i am about route</h1>} />*/}
                 {/* <Route path="/help" render={() => <h1>Hello i am help route</h1>} />*/}
                 {/*<Route path="/" exact component={Home}/>*/}
+                <Nav/>
                 <Switch>
                     <Route path="/" exact render={ () => <Home name="maruf" />}/>
                     <Route path="/about" component={About}/>
