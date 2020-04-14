@@ -13,7 +13,7 @@ function App() {
                 {/*<Route path="/" render={() => <h1>Hello  i am home route</h1>}/>*/}
                 {/*<Route path="/about" render={() => <h1>Hello i am about route</h1>} />*/}
                 {/* <Route path="/help" render={() => <h1>Hello i am help route</h1>} />*/}
-                <Route path="/" component={Home}/>
+                <Route path="/" exact component={Home}/>
                 <Route path="/about" component={About}/>
                 <Route path="/contact" component={Contact}/>
 
