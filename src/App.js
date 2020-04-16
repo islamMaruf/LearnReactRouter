@@ -7,6 +7,8 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Nav from "./components/Nav";
 import TestComponent from "./components/TestComponent";
+import PrivateRoute from "./private-route";
+import Login from "./Login";
 function App() {
     return (
         <BrowserRouter>
@@ -21,7 +23,8 @@ function App() {
                     <Route path="/" exact render={ () => <Home name="maruf" />}/>
                     <Route path="/about" component={About}/>
                     <Route path="/contact" component={Contact}/>
-                    <Route path="/post/:postId" component={TestComponent}/>
+                    <PrivateRoute path="/post/:postId" component={TestComponent}/>
+                    <Route path="/login" component={Login}/>
                 </Switch>
 
 
