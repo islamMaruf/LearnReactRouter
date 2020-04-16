@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Nav from "./components/Nav";
+import TestComponent from "./components/TestComponent";
 function App() {
     return (
         <BrowserRouter>
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/" exact render={ () => <Home name="maruf" />}/>
                     <Route path="/about" component={About}/>
                     <Route path="/contact" component={Contact}/>
+                    <Route path="/post/:postId" component={TestComponent}/>
                 </Switch>
 
 
