@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-const TestComponent = (props) => {
-    console.log(props);
+const TestComponent = ({ match :{params}}) => {
+    console.log(params.postId);
     return <h1>hello world</h1>
 }
 
