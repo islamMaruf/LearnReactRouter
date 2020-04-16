@@ -1,12 +1,18 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 class Nav extends Component {
+
     render() {
+        const style = {
+            color : 'black',
+            fontWeight : 'bold'
+
+        }
         return (
             <nav>
-                <Link to="/"> Home </Link>
+                <NavLink activeStyle={style} exact to="/"> Home </NavLink>
                 <Link to="/about">About </Link>
-                <Link to="/contact">Contact </Link>
+                <NavLink activeStyle={style} to="/contact">Contact </NavLink>
             </nav>
         );
     }
